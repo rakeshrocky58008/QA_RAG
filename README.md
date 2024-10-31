@@ -12,6 +12,7 @@ Q&A Chatbot Page (app_qa.py): A RAG to upload PDF and obtain information relaven
 
 How to Run the App
 
+
 Prerequisites
 Python 3.11+ (Ensure compatibility with all required libraries)
 Streamlit and additional dependencies specified in requirements.txt
