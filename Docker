@@ -1,0 +1,33 @@
+# Use the latest Python 3.11 image
+FROM python:3.11
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies required for FAISS
+RUN apt-get update && \
+    apt-get install -y libgomp1
+
+# Install faiss-cpu and compatible numpy
+RUN pip install numpy faiss-cpu
+
+# Copy requirements and install additional dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Debugging step: Test FAISS import
+RUN python -c "import faiss; print('FAISS imported successfully')"
+
+
+# Copy application files
+COPY app.py /app/app.py
+COPY app_qa.py /app/app_qa.py
+COPY main_app.py /app/main_app.py
+COPY .env /app
+
+# Set Streamlit as the entry point
+CMD ["streamlit", "run", "main_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+# Expose port
+EXPOSE 8501
+
