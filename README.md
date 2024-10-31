@@ -1,0 +1,2 @@
+# QA_RAG
+QA and RAG APP 
