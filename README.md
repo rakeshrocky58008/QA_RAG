@@ -125,5 +125,14 @@ GROQ_API_KEY=your_groq_api_key
 HF_KEY=your_HF_key
 
 
+ScreenShots - 
+
+QA PAGE 
+![image](https://github.com/user-attachments/assets/881c77da-d3a4-4bc8-a676-850cd5fe6a35)
+
+RAG PAGE 
+
+![image](https://github.com/user-attachments/assets/e8b4122a-5f48-4923-9029-b0c6ce763974)
+
 
 
