@@ -12,7 +12,22 @@ Home Page (app.py): A chatbot interface where users can input questions and rece
 Q&A Chatbot Page (app_qa.py): A RAG Application for PDF Q&A
 
 
-How to Run the App
+HOW TO USE : 
+
+
+The webapp has two functionalities 
+
+1. A Q&A chat bot from gemma 8b parameter by Google interface
+    * You can set the temperature and Max tockens for the App so u can maintain your free limit on Gemma
+      
+3. A PDF RAG with Session history , for Q&A on uploaded document
+    * Provision for privacy with Groq api , user can use their own APi from Groq so its secure or you the default one which is free tier version
+    * Just upload the PDF and wait it to prompt for a Question !!
+      
+
+
+
+How to Run the App : 
 
 1. In local Machine 
     Using Docker Image -  https://hub.docker.com/r/rakeshz12/qa_rag_app 
@@ -63,9 +78,11 @@ How to Run the App
       Once deployed, navigate to App Services in the Azure Portal.
       Click on your web app, and under Overview, you’ll see the URL (e.g., https://<webapp-name>.azurewebsites.net). Use this URL to access your app.
 
+
+
      
 
-Build the App
+Build the App :
 
 
 Prerequisites -
